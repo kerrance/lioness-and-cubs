@@ -24,79 +24,17 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.lionessandcubs.co.uk/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ffb300" />
     <link rel="canonical" href="https://www.lionessandcubs.co.uk" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500..700;1,500..700&family=Style+Script&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500..700;1,500..700&family=Style+Script&display=swap"
     />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <title>Lioness & Cubs</title>
-
-    <style>
-      :root {
-        color-scheme: light dark;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-      }
-
-      body {
-        -webkit-font-smoothing: antialiased;
-        font-family: "Montserrat", sans-serif;
-        font-size: 3rem;
-        line-height: 1.4;
-      }
-
-      .container {
-        max-width: 90vw;
-        margin: 0 auto;
-        padding: 1rem;
-      }
-
-      @media only screen and (min-width: 800px) {
-        .container {
-          max-width: 80vw;
-        }
-      }
-
-      @media only screen and (min-width: 1200px) {
-        .container {
-          max-width: 1200px;
-          padding: 2rem;
-        }
-      }
-
-      header {
-        margin-top: 4rem;
-      }
-
-      main {
-        margin-bottom: 4rem;
-      }
-
-      footer {
-        font-size: 1.4rem;
-      }
-
-      h1 {
-        font-family: "Style Script", cursive;
-        font-size: 6rem;
-      }
-
-      p {
-        margin-bottom: 2rem;
-      }
-
-      p:last-child {
-        margin-bottom: 0;
-      }
-    </style>
+    <title>Lioness &amp; Cubs</title>
   </head>
   <body>
     <noscript
@@ -108,23 +46,94 @@
       ></iframe
     ></noscript>
 
-    <header>
+    <header class="promotion">
       <div class="container">
-        <img src="favicon.svg" alt="Lioness & Cubs logo" style="width: 20rem; height: 10rem" />
-        <h1>Lioness &amp; Cubs</h1>
+        <p>Lead magnet</p>
       </div>
     </header>
 
+    <header class="navigation">
+      <div class="container">
+        <div class="navigation__flex">
+          <nav>
+            <ul>
+              <li><a href="/">Classes</a></li>
+              <li><a href="/">Timetable</a></li>
+            </ul>
+          </nav>
+          <a href="/">
+            <h1>Lioness &amp; Cubs</h1>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="/" class="navigation__call-to-action">Book your trial class</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__banner">
+          <h2>Strength-based fitness for pregnancy, <br />postpartum recovery & beyond</h2>
+          <h3>Move with confidence. Grow like a lioness.</h3>
+          <a href="/" class="hero__call-to-action">Book your first class</a>
+        </div>
+      </div>
+    </section>
+
     <main>
       <div class="container">
-        <p>Coming soon...</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et urna augue. Quisque dignissim urna vitae
+          molestie dictum. Ut condimentum, nunc ac eleifend blandit, mi arcu semper lorem, vel tincidunt massa erat non
+          eros. Proin porta massa iaculis, fermentum mauris sit amet, pulvinar odio. Sed urna ante, finibus et elit ac,
+          pulvinar tempus risus. In at urna eleifend, dapibus nibh id, convallis augue. Pellentesque a rhoncus odio,
+          porta lacinia nisl. Quisque vitae purus odio. Phasellus eu condimentum turpis. In iaculis diam ut felis
+          varius, vel imperdiet erat suscipit. Praesent elementum hendrerit odio, eleifend egestas massa feugiat eget.
+          Vestibulum suscipit lobortis elit ac commodo. Donec id varius arcu, sagittis malesuada augue. Mauris
+          condimentum at eros quis lobortis. Mauris ac tortor sit amet nisi pharetra auctor.
+        </p>
       </div>
     </main>
 
-    <footer>
+    <footer class="sitemap">
       <div class="container">
-        <p>&copy; 2026 Lioness &amp; Cubs.</p>
-        <p>Website by <a href="//razorsharp.digital/" target="_blank" style="color: #8b5cf6">Razor Sharp</a>.</p>
+        <div class="sitemap__flex">
+          <div class="sitemap__column">
+            <h2>Lioness &amp; Cubs</h2>
+            <p>Strength in every stage of motherhood</p>
+            <ul>
+              <li>Location</li>
+              <li>Email</li>
+              <li>Phone number</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+          <div class="sitemap__column">
+            <img src="favicon.svg" alt="Lioness & Cubs logo" style="width: 20rem; height: 10rem" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="colophon">
+      <div class="container">
+        <div class="colophon__flex">
+          <p>&copy; 2026 <a href="/">Lioness &amp; Cubs</a></p>
+          <nav>
+            <ul>
+              <li><a href="/">Terms &amp; Conditions</a></li>
+              <li><a href="/">Privacy Policy</a></li>
+              <li><a href="/">Cookies Policy</a></li>
+            </ul>
+          </nav>
+          <p>
+            Website by
+            <a href="https://www.razorsharp.digital/" target="_blank" rel="noopener noreferrer">Razor Sharp</a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>
