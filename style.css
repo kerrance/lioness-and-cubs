@@ -17,7 +17,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
   background-color: light-dark(var(--linen) var(--black));
   color: light-dark(var(--black) var(--linen));
@@ -75,9 +75,33 @@ body {
   gap: 1rem;
 }
 
-.navigation h1 {
-  font-size: 2rem;
+.logo {
+  font-family: "Style Script", cursive;
+  font-size: 1.2rem;
   user-select: none;
+  position: relative;
+}
+
+.logo:hover {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(-2deg);
+  transform-origin: left bottom;
+  transition: width 0.3s ease;
+}
+
+.logo:hover::after {
+  width: 100%;
 }
 
 .navigation__call-to-action {
@@ -88,11 +112,16 @@ body {
   border-radius: 10px;
 }
 
+.navigation__call-to-action::after {
+  display: none;
+}
+
 .navigation__call-to-action:hover {
   border: 2px solid;
   border-color: var(--gold);
   color: var(--gold);
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .hero .container {
@@ -109,6 +138,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   gap: 1rem;
+  text-align: right;
 }
 
 @media (prefers-color-scheme: light) {
@@ -126,26 +156,34 @@ body {
 .hero__banner h2,
 .hero__banner h3 {
   margin-right: 2rem;
-  color: var(--linen);
+  color: light-dark(var(--linen) var(--black));
+}
+
+.hero__banner h2 {
+  font-size: 2rem;
+}
+
+.hero__banner h3 {
+  font-size: 1.6rem;
 }
 
 .hero__call-to-action {
-  border: 2px solid var(--linen);
-  color: var(--linen);
+  border: 2px solid;
+  border-color: light-dark(var(--black) var(--linen));
+  color: light-dark(var(--linen) var(--black));
   padding: 0.5rem 1rem;
   border-radius: 10px;
   margin-right: 2rem;
 }
 
+.hero__call-to-action::after {
+  display: none;
+}
+
 .hero__call-to-action:hover {
   border: 2px solid var(--gold);
   color: var(--gold);
-  text-decoration: none;
-}
-
-h1 {
-  font-family: "Style Script", cursive;
-  font-size: 2rem;
+  transition: all 0.3s ease;
 }
 
 p {
@@ -159,10 +197,27 @@ p:last-child {
 a {
   text-decoration: none;
   color: light-dark(var(--black) var(--linen));
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 .sitemap {
@@ -219,12 +274,4 @@ a:hover {
   list-style: none;
   display: inline-flex;
   gap: 1rem;
-}
-
-.colophon a {
-  color: var(--linen);
-}
-
-.colophon a:hover {
-  text-decoration: underline;
 }
