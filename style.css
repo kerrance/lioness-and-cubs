@@ -101,7 +101,6 @@ body {
 }
 
 .hero__banner {
-  background-image: url(banner-light.jpg);
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -110,6 +109,12 @@ body {
   align-items: flex-end;
   justify-content: center;
   gap: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .hero__banner {
+    background-image: url("banner-light.jpg");
+  }
 }
 
 @media (prefers-color-scheme: dark) {
