@@ -54,20 +54,29 @@
 
     <header class="navigation">
       <div class="container">
-        <div class="navigation__flex">
+        <div class="navigation__grid">
           <nav>
             <ul>
-              <li><a href="/">Classes</a></li>
-              <li><a href="/">Timetable</a></li>
+              <li><a href="#classes">Classes</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#location">Location</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </nav>
           <a href="/" class="logo">
             <h1>Lioness &amp; Cubs</h1>
           </a>
           <nav>
-            <ul>
-              <li><a href="/" class="navigation__call-to-action">Book your trial class</a></li>
-            </ul>
+            <a
+              href="https://www.instagram.com/lionessandcubs_horsham/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navigation__instagram"
+            >
+              <img src="images/instagram.svg" alt="Instagram" style="width: 2rem; height: 2rem"
+            /></a>
+            <a href="/" class="navigation__call-to-action">Book your trial class</a>
           </nav>
         </div>
       </div>
@@ -83,20 +92,195 @@
       </div>
     </section>
 
-    <main>
+    <section class="classes" id="classes">
       <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et urna augue. Quisque dignissim urna vitae
-          molestie dictum. Ut condimentum, nunc ac eleifend blandit, mi arcu semper lorem, vel tincidunt massa erat non
-          eros. Proin porta massa iaculis, fermentum mauris sit amet, pulvinar odio. Sed urna ante, finibus et elit ac,
-          pulvinar tempus risus. In at urna eleifend, dapibus nibh id, convallis augue. Pellentesque a rhoncus odio,
-          porta lacinia nisl. Quisque vitae purus odio. Phasellus eu condimentum turpis. In iaculis diam ut felis
-          varius, vel imperdiet erat suscipit. Praesent elementum hendrerit odio, eleifend egestas massa feugiat eget.
-          Vestibulum suscipit lobortis elit ac commodo. Donec id varius arcu, sagittis malesuada augue. Mauris
-          condimentum at eros quis lobortis. Mauris ac tortor sit amet nisi pharetra auctor.
-        </p>
+        <h2 class="section-title">Classes</h2>
+        <div class="classes__grid">
+          <article class="class-card">
+            <h3>The Growing Lioness</h3>
+            <span class="class-card__tag">Prenatal Strength &amp; Fitness</span>
+            <ul class="class-card__meta">
+              <li>1-2pm Mondays</li>
+              <li>£12 per class</li>
+            </ul>
+            <p>A strength-based pregnancy class designed to support your body through every stage of pregnancy.</p>
+            <a href="/" class="button" target="_blank" rel="noopener noreferrer">Book Now</a>
+          </article>
+
+          <article class="class-card">
+            <h3>Restore the Lioness</h3>
+            <span class="class-card__tag">Postnatal Recovery & Strength</span>
+            <ul class="class-card__meta">
+              <li>10.45am-11.30am Tuesdays</li>
+              <li>£12 per class</li>
+            </ul>
+            <p>A supportive postnatal class focused on recovery, rebuilding and returning to strength safely.</p>
+            <a href="/" class="button" target="_blank" rel="noopener noreferrer">Book Now</a>
+          </article>
+
+          <article class="class-card">
+            <h3>Mums &amp; Cubs</h3>
+            <span class="class-card__tag">Toddler &amp; Mum Strength Class </span>
+            <ul class="class-card__meta">
+              <li>9.45-10.30am Tuesdays</li>
+              <li>£10 per class</li>
+            </ul>
+            <p>A fun, supportive class where mums can move, rebuild strength and bring their little ones along.</p>
+            <a href="/" class="button" target="_blank" rel="noopener noreferrer">Book Now</a>
+          </article>
+        </div>
       </div>
-    </main>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__flex">
+          <div class="about__content" data-collapsed>
+            <h2 class="section-title">About Rubie</h2>
+            <p class="about__qualifications">Level 3 Pre &amp; Post Natal Qualified &bull; 10+ Years Experience</p>
+
+            <p>Hi, I'm Rubie - the founder of Lioness and Cubs.</p>
+            <p>
+              I'm a Level 3 Pre and Post Natal qualified trainer with over 10 years of experience in the fitness
+              industry and I've had the pleasure of working with hundreds of women throughout their fitness journeys.
+              Being a mother myself, I know first hand the physical and emotional changes that come with pregnancy,
+              postpartum recovery, and motherhood beyond.
+            </p>
+            <p>
+              Lioness and Cubs was built on one powerful belief: mums are incredibly strong - sometimes they just need
+              reminding.
+            </p>
+            <div class="about__expandable">
+              <p>
+                My classes focus on creating solid foundations. During pregnancy, we work safely and intentionally to
+                keep your body strong whilst it adapts to your growing baby bump. Post-partum, we rebuild with care,
+                restoring core strength, improving mobility, and developing functional strength that supports you in
+                everyday life.
+              </p>
+              <p>
+                This isn’t about pressure or unrealistic expectations. It’s about reconnecting with your body, building
+                resilience, and recognising your capability.
+              </p>
+              <p>
+                I want every mum who steps into my class to feel powerful, to move with confidence, to trust her body,
+                and to leave feeling stronger than when she arrived.
+              </p>
+              <p>
+                At Lioness and Cubs, we don’t just exercise. We build strength. We build confidence. We build lionesses.
+              </p>
+              <p>I can’t wait to welcome you.</p>
+            </div>
+            <button class="about__read-more" aria-expanded="false">Read more</button>
+          </div>
+          <div class="about__photo">
+            <img src="images/rubie-scott.jpg" alt="Rubie Scott" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container">
+        <h2 class="section-title">Location &amp; Facilities</h2>
+        <div class="location__flex">
+          <div class="location__map">
+            <iframe
+              src="https://maps.google.com/maps?q=2nd+Horsham+Scout+Group,+Swindon+Road,+Horsham,+RH12+2HF&output=embed"
+              width="100%"
+              height="320"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="2nd Horsham Scout Group on Google Maps"
+            ></iframe>
+          </div>
+          <ul class="location__list">
+            <li>
+              <span class="location__meta">Where</span>
+              <span>2nd Horsham Scout Group, Swindon Road, Horsham, RH12 2HF</span>
+            </li>
+            <li>
+              <span class="location__meta">what3words</span>
+              <span>tins.degree.kick </span>
+            </li>
+            <li>
+              <span class="location__meta">Parking</span>
+              <span>Free on-site car park, plus unrestricted street parking nearby</span>
+            </li>
+            <li>
+              <span class="location__meta">Facilities</span>
+              <span>Heated floors &bull; Excellent toilets &bull; Wheelchair &amp; pram accessible</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Pricing</h2>
+        <p class="pricing__promo">Your first class is free</p>
+        <div class="pricing__grid">
+          <div class="pricing-card">
+            <h3>The Growing Lioness</h3>
+            <p class="pricing-card__tag">Prenatal</p>
+            <p class="pricing-card__price">£12 per class</span></p>
+            <p class="pricing-card__block">Block of 4 for £40</p>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Restore the Lioness</h3>
+            <p class="pricing-card__tag">Postnatal</p>
+            <p class="pricing-card__price">£12 per class</span></p>
+            <p class="pricing-card__block">Block of 4 for £40</p>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Mums &amp; Cubs</h3>
+            <p class="pricing-card__tag">Toddlers</p>
+            <p class="pricing-card__price">£10 per class</span></p>
+            <p class="pricing-card__block">Block of 4 for £36</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">What to Expect</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Do I need to bring anything?</summary>
+            <p>
+              Just bring a yoga mat, a water bottle, and comfortable clothes you can move in. If you don&rsquo;t have a
+              mat yet, just let Rubie know.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>When can I start?</summary>
+            <p>
+              You&rsquo;re welcome to join at any stage of pregnancy. For postnatal classes, we recommend waiting until
+              at least 6 weeks postpartum and getting clearance from your GP or midwife first.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Are babies welcome?</summary>
+            <p>
+              Yes! Babies are welcome in postnatal and Mums &amp; Cubs classes. They can lie on a mat beside you or sit
+              in a bouncer while you exercise.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>What if I&rsquo;ve never exercised before?</summary>
+            <p>
+              All fitness levels are welcome. Classes are designed to be adapted to you &mdash; whether you&rsquo;re a
+              seasoned gym-goer or this is your very first fitness class, you&rsquo;ll feel right at home.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
 
     <footer class="sitemap">
       <div class="container">
@@ -120,18 +304,11 @@
                   alt="Phone number"
                   style="width: 2.4rem; height: 2.4rem"
                 />
-                <span>07752 271367</span>
+                <span>Redacted</span>
               </li>
             </ul>
           </div>
           <div class="sitemap__column">
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/lionessandcubs_horsham/" target="_blank" rel="noopener noreferrer"
-                  >Instagram</a
-                >
-              </li>
-            </ul>
             <img src="favicon.svg" alt="Lioness & Cubs logo" style="width: 20rem" />
           </div>
         </div>
@@ -156,5 +333,22 @@
         </div>
       </div>
     </footer>
+    <script>
+      const aboutContent = document.querySelector(".about__content");
+      const readMoreBtn = document.querySelector(".about__read-more");
+
+      readMoreBtn.addEventListener("click", () => {
+        const isCollapsed = aboutContent.hasAttribute("data-collapsed");
+        if (isCollapsed) {
+          aboutContent.removeAttribute("data-collapsed");
+          readMoreBtn.textContent = "Read less";
+          readMoreBtn.setAttribute("aria-expanded", "true");
+        } else {
+          aboutContent.setAttribute("data-collapsed", "");
+          readMoreBtn.textContent = "Read more";
+          readMoreBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
   </body>
 </html>
