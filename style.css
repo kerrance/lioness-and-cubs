@@ -14,6 +14,10 @@
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: var(--flame);
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", sans-serif;
@@ -143,13 +147,13 @@ body {
 
 @media (prefers-color-scheme: light) {
   .hero__banner {
-    background-image: url("banner-light.jpg");
+    background-image: url("images/banner-light.jpg");
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .hero__banner {
-    background-image: url("banner-dark.jpg");
+    background-image: url("images/banner-dark.jpg");
   }
 }
 
@@ -225,6 +229,11 @@ a:hover::after {
   color: var(--black);
 }
 
+.sitemap h2 {
+  font-family: "Style Script", cursive;
+  font-size: 3rem;
+}
+
 .sitemap__flex {
   display: flex;
   flex-direction: column-reverse;
@@ -240,7 +249,23 @@ a:hover::after {
 
 .sitemap__column ul {
   list-style: none;
+}
+
+.sitemap__column ul li {
+  display: flex;
+  align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .sitemap__column ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sitemap__column ul li img {
+  user-select: none;
 }
 
 .colophon {
@@ -272,6 +297,21 @@ a:hover::after {
 
 .colophon nav ul {
   list-style: none;
-  display: inline-flex;
-  gap: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .colophon nav ul {
+    display: inline-flex;
+    gap: 1rem;
+  }
+}
+
+.colophon nav ul li {
+  margin: 0.6rem 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .colophon nav ul li {
+    margin: 0;
+  }
 }
