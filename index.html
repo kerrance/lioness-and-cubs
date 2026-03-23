@@ -39,7 +39,7 @@
     <header class="navigation">
       <div class="container">
         <div class="navigation__grid">
-          <nav>
+          <nav class="navigation__links" id="navigation-links">
             <ul>
               <li><a href="#classes">Classes</a></li>
               <li><a href="#about">About</a></li>
@@ -61,6 +61,7 @@
               <img src="images/instagram.svg" alt="Instagram" style="width: 2rem; height: 2rem"
             /></a>
             <a href="/" target="_blank" rel="noopener noreferrer" class="navigation__call-to-action">Book your trial class</a>
+            <button class="navigation__menu-toggle" aria-expanded="false" aria-controls="navigation-links">Menu</button>
           </nav>
         </div>
       </div>
@@ -310,6 +311,7 @@
       </div>
     </footer>
     <script src="about.js"></script>
+    <script src="navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script src="cookie-consent.js"></script>
   </body>
