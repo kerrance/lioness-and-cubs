@@ -140,7 +140,7 @@ body {
   border: 2px solid;
   border-color: light-dark(var(--black) var(--linen));
   color: light-dark(var(--black) var(--linen));
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 10px;
 }
 
@@ -203,7 +203,7 @@ body {
   border: 2px solid;
   border-color: light-dark(var(--black) var(--linen));
   color: light-dark(var(--linen) var(--black));
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 10px;
   margin-right: 4rem;
 }
@@ -377,7 +377,7 @@ a:hover::after {
   font-weight: 700;
   color: var(--gold);
   padding: 0;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 
 .about__read-more:hover {
@@ -390,8 +390,8 @@ a:hover::after {
   color: var(--black);
   font-weight: 700;
   font-size: 0.9rem;
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
 }
 
 .location__flex {
@@ -453,7 +453,7 @@ a:hover::after {
   color: var(--linen);
   font-weight: 700;
   padding: 0.7rem 1.4rem;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 2rem;
 }
 
