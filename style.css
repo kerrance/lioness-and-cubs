@@ -36,13 +36,13 @@ body {
 @media only screen and (min-width: 800px) {
   .container {
     max-width: 80vw;
+    padding: 2rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 2rem;
   }
 }
 
@@ -274,14 +274,29 @@ body {
 
 .hero__banner {
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   min-height: 600px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  text-align: left;
   justify-content: center;
   gap: 1rem;
-  text-align: right;
+  padding: 0 2rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .hero__banner {
+    align-items: flex-end;
+    text-align: right;
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero__banner {
+    padding: 0 4rem;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -298,7 +313,6 @@ body {
 
 .hero__banner h2,
 .hero__banner h3 {
-  margin-right: 4rem;
   color: light-dark(var(--black), var(--linen));
 }
 
@@ -316,7 +330,6 @@ body {
   color: light-dark(var(--black), var(--linen));
   padding: 0.6rem 1.4rem;
   border-radius: 10px;
-  margin-right: 4rem;
 }
 
 .hero__call-to-action::after {
@@ -450,6 +463,7 @@ a:hover::after {
   max-width: 600px;
   width: 90vw;
   max-height: 85vh;
+  margin: auto;
   background-color: light-dark(white, var(--black));
   color: light-dark(var(--black), white);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -464,7 +478,6 @@ a:hover::after {
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
-  max-height: 85vh;
   overflow-y: auto;
 }
 
@@ -514,8 +527,34 @@ a:hover::after {
 }
 
 .class-modal__footer {
-  border-top: 1px solid light-dark(var(--bone), #2a2420);
   padding-top: 1rem;
+}
+
+.class-modal__call-to-action {
+  display: none;
+  border: 2px solid;
+  border-color: light-dark(var(--black), var(--linen));
+  color: light-dark(var(--black), var(--linen));
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .class-modal__call-to-action {
+    display: inline-block;
+  }
+}
+
+.class-modal__call-to-action::after {
+  display: none;
+}
+
+.class-modal__call-to-action:hover {
+  border: 2px solid;
+  border-color: var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .about__flex {
