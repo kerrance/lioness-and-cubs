@@ -48,9 +48,6 @@ body {
 }
 
 .promotion {
-  background-color: var(--gold);
-  color: var(--black);
-  text-align: center;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -59,6 +56,24 @@ body {
 .promotion .container {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
+}
+
+.promotion__call-to-action {
+  display: block;
+  background-color: var(--bone);
+  color: var(--black);
+  text-align: center;
+}
+
+.promotion__call-to-action:hover {
+  color: var(--black);
+  background-color: var(--flame);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.promotion__call-to-action:after {
+  display: none;
 }
 
 .navigation {
