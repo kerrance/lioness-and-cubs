@@ -51,6 +51,9 @@ body {
   background-color: var(--gold);
   color: var(--black);
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .promotion .container {
