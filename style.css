@@ -384,6 +384,7 @@ a:hover::after {
 .class-card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -417,44 +418,28 @@ a:hover::after {
   flex: 1;
 }
 
-.class-card__actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 .class-card__read-more {
-  background: none;
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: light-dark(var(--black), var(--linen));
   cursor: pointer;
-  padding: 0;
-  position: relative;
+  background-color: transparent;
+  border: 2px solid light-dark(var(--black), var(--linen));
+  color: light-dark(var(--black), var(--linen));
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  text-align: center;
+  align-self: flex-start;
 }
 
 .class-card__read-more::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: currentColor;
-  transition: width 0.3s ease;
+  display: none;
 }
 
 .class-card__read-more:hover {
   color: var(--gold);
-  transition: color 0.3s ease;
-}
-
-.class-card__read-more:hover::after {
-  width: 100%;
+  border-color: var(--gold);
+  transition: all 0.3s ease;
 }
 
 .class-modal {
@@ -530,29 +515,6 @@ a:hover::after {
 .class-modal__footer {
   border-top: 1px solid light-dark(var(--bone), #2a2420);
   padding-top: 1rem;
-}
-
-.button {
-  display: inline-block;
-  border: 2px solid var(--black);
-  color: var(--black);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 0.6rem 1.4rem;
-  border-radius: 10px;
-  text-align: center;
-  align-self: flex-start;
-}
-
-.button::after {
-  display: none;
-}
-
-.button:hover {
-  color: var(--gold);
-  border-color: var(--gold);
-  transition: all 0.3s ease;
 }
 
 .about__flex {
@@ -715,9 +677,28 @@ a:hover::after {
   margin-bottom: 0;
 }
 
-.pricing-card .button {
+.pricing-card__button {
+  display: inline-block;
+  border: 2px solid var(--black);
+  color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.4rem;
   margin-top: 1.4rem;
   align-self: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pricing-card__button::after {
+  display: none;
+}
+
+.pricing-card__button:hover {
+  color: var(--linen);
+  background-color: var(--black);
+  transition: all 0.3s ease;
 }
 
 .pricing-card h3 {
