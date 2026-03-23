@@ -649,3 +649,27 @@ a:hover::after {
     margin: 0;
   }
 }
+
+.cc-revoke,
+.cc-window {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cc-link,
+.cc-btn {
+  color: var(--linen);
+  text-decoration: none;
+}
+
+.cc-allow {
+  border-radius: 10px;
+}
+
+.cc-allow::after {
+  display: none;
+}
+
+.cc-highlight .cc-btn:first-child:focus,
+.cc-highlight .cc-btn:first-child:hover {
+  text-decoration: none;
+}

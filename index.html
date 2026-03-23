@@ -1,19 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-P7K7HCMG");
-    </script>
-
     <meta charset="UTF-8" />
     <meta name="author" content="Rubie Scott" />
     <meta name="description" content="Pre and post natal fitness" />
@@ -32,20 +19,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500..700;1,500..700&family=Style+Script&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <title>Lioness &amp; Cubs</title>
   </head>
   <body>
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-P7K7HCMG"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-
     <header class="promotion">
       <div class="container">
         <p>Book now - <em>your first class is free</em></p>
@@ -76,7 +58,7 @@
             >
               <img src="images/instagram.svg" alt="Instagram" style="width: 2rem; height: 2rem"
             /></a>
-            <a href="/" target="_blank" class="navigation__call-to-action">Book your trial class</a>
+            <a href="/" target="_blank" rel="noopener noreferrer" class="navigation__call-to-action">Book your trial class</a>
           </nav>
         </div>
       </div>
@@ -87,7 +69,7 @@
         <div class="hero__banner">
           <h2>Strength-based fitness for pregnancy, <br />postpartum recovery & beyond</h2>
           <h3>Move with confidence. Grow like a lioness.</h3>
-          <a href="/" target="_blank" class="hero__call-to-action">Book your first class</a>
+          <a href="/" target="_blank" rel="noopener noreferrer" class="hero__call-to-action">Book your first class</a>
         </div>
       </div>
     </section>
@@ -333,22 +315,8 @@
         </div>
       </div>
     </footer>
-    <script>
-      const aboutContent = document.querySelector(".about__content");
-      const readMoreBtn = document.querySelector(".about__read-more");
-
-      readMoreBtn.addEventListener("click", () => {
-        const isCollapsed = aboutContent.hasAttribute("data-collapsed");
-        if (isCollapsed) {
-          aboutContent.removeAttribute("data-collapsed");
-          readMoreBtn.textContent = "Read less";
-          readMoreBtn.setAttribute("aria-expanded", "true");
-        } else {
-          aboutContent.setAttribute("data-collapsed", "");
-          readMoreBtn.textContent = "Read more";
-          readMoreBtn.setAttribute("aria-expanded", "false");
-        }
-      });
-    </script>
+    <script src="about.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script src="cookie-consent.js"></script>
   </body>
 </html>
