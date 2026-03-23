@@ -30,13 +30,12 @@ body {
 .container {
   max-width: 90vw;
   margin: 0 auto;
-  padding: 0.6rem;
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 800px) {
   .container {
     max-width: 80vw;
-    padding: 1rem;
   }
 }
 
@@ -223,6 +222,7 @@ body {
   flex-direction: column;
   padding: 0 1.4rem;
   gap: 0;
+  display: block;
 }
 
 .navigation .navigation__links ul li a {
