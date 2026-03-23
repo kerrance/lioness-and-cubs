@@ -324,8 +324,9 @@ body {
 }
 
 .hero__call-to-action:hover {
-  border: 2px solid var(--gold);
-  color: var(--gold);
+  border: 2px solid light-dark(var(--black), var(--gold));
+  color: light-dark(var(--linen), var(--gold));
+  background-color: light-dark(var(--black), transparent);
   transition: all 0.3s ease;
 }
 
