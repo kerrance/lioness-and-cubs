@@ -291,14 +291,14 @@ a:hover::after {
   font-weight: 700;
   padding: 0.2rem 0.8rem;
   border-radius: 20px;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   align-self: flex-start;
 }
 
 .class-card__meta {
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
   color: var(--grey);
   display: flex;
   flex-direction: column;
@@ -380,7 +380,6 @@ a:hover::after {
   font-weight: 700;
   color: var(--gold);
   padding: 0;
-  margin-top: 0.4rem;
 }
 
 .about__read-more:hover {
@@ -395,6 +394,10 @@ a:hover::after {
   font-size: 0.9rem;
   padding: 0.7rem 1.4rem;
   border-radius: 10px;
+}
+
+.about__expandable p:last-child {
+  margin-bottom: 2rem;
 }
 
 .location__flex {
@@ -426,7 +429,8 @@ a:hover::after {
 }
 
 .location__meta {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
   color: var(--gold);
 }
 
@@ -441,7 +445,7 @@ a:hover::after {
 }
 
 .pricing {
-  background-color: var(--gold);
+  background-color: var(--flame);
   color: var(--black);
 }
 
@@ -472,7 +476,7 @@ a:hover::after {
 }
 
 .pricing-card {
-  background-color: var(--flame);
+  background-color: var(--gold);
   color: var(--black);
   border-radius: 12px;
   padding: 2rem;
@@ -490,7 +494,6 @@ a:hover::after {
 
 .pricing-card__tag {
   font-size: 0.75rem;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--black);
   margin-bottom: 1.4rem;
