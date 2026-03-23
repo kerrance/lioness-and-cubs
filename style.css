@@ -417,6 +417,121 @@ a:hover::after {
   flex: 1;
 }
 
+.class-card__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.class-card__read-more {
+  background: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: light-dark(var(--black), var(--linen));
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+}
+
+.class-card__read-more::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.class-card__read-more:hover {
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+.class-card__read-more:hover::after {
+  width: 100%;
+}
+
+.class-modal {
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  max-width: 600px;
+  width: 90vw;
+  max-height: 85vh;
+  background-color: light-dark(white, var(--black));
+  color: light-dark(var(--black), white);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.class-modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.class-modal__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.class-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.class-modal__header h2 {
+  font-size: 1.6rem;
+}
+
+.class-modal__close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: light-dark(var(--black), var(--linen));
+  padding: 0;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.class-modal__close:hover {
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+.class-modal__body ul {
+  padding-left: 1.4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.class-modal__highlights {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.class-modal__tagline {
+  font-style: italic;
+  color: var(--grey);
+}
+
+.class-modal__footer {
+  border-top: 1px solid light-dark(var(--bone), #2a2420);
+  padding-top: 1rem;
+}
+
 .button {
   display: inline-block;
   border: 2px solid var(--black);
@@ -598,6 +713,11 @@ a:hover::after {
 
 .pricing-card > * {
   margin-bottom: 0;
+}
+
+.pricing-card .button {
+  margin-top: 1.4rem;
+  align-self: center;
 }
 
 .pricing-card h3 {
