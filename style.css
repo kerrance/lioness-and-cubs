@@ -888,6 +888,13 @@ a:hover::after {
 .colophon {
   background-color: var(--black);
   color: var(--linen);
+  padding: 2rem 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .colophon {
+    padding: 0;
+  }
 }
 
 .colophon p {
