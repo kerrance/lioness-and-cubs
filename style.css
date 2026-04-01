@@ -221,6 +221,7 @@ body {
 .navigation .navigation__links ul {
   flex-direction: column;
   padding: 0 1.4rem;
+  margin: 0 auto;
   gap: 0;
   display: block;
 }
@@ -228,7 +229,6 @@ body {
 @media only screen and (min-width: 800px) {
   .navigation .navigation__links ul {
     max-width: 80vw;
-    margin: 0 auto;
   }
 }
 
@@ -264,6 +264,7 @@ body {
     display: inline-flex;
     flex-direction: row;
     padding: 0;
+    margin: 0;
     gap: 1rem;
   }
 
