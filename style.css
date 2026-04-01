@@ -881,6 +881,10 @@ a:hover::after {
   user-select: none;
 }
 
+.sitemap a:hover {
+  color: var(--black);
+}
+
 .colophon {
   background-color: var(--black);
   color: var(--linen);
@@ -988,6 +992,44 @@ a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+}
+
+.not-found {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.not-found__heading {
+  font-family: "Style Script", cursive;
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.not-found__subheading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.not-found__call-to-action {
+  display: inline-block;
+  border: 2px solid;
+  border-color: light-dark(var(--black), var(--linen));
+  color: light-dark(var(--black), var(--linen));
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.not-found__call-to-action::after {
+  display: none;
+}
+
+.not-found__call-to-action:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transition: all 0.3s ease;
 }
 
 .cc-revoke,
