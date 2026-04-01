@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
       allow: "Accept cookies",
       deny: "Decline",
       link: "Cookie policy",
-      href: "/cookies",
+      href: "/cookies.html",
     },
     onInitialise: function (status) {
       if (status === cookieconsent.status.allow) loadGTM();
