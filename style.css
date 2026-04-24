@@ -881,8 +881,17 @@ a:hover::after {
   user-select: none;
 }
 
+.sitemap a {
+  color: var(--black);
+}
+
 .sitemap a:hover {
   color: var(--black);
+}
+
+.sitemap__logo {
+  filter: brightness(0) saturate(100%) invert(4%) sepia(6%) saturate(3346%) hue-rotate(349deg) brightness(97%)
+    contrast(97%);
 }
 
 .colophon {
